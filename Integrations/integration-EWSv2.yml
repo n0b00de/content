@@ -96,7 +96,7 @@ script:
     logging.basicConfig(stream=log_stream, level=logging.DEBUG)
 
     from exchangelib.errors import ErrorItemNotFound, ResponseMessageError, TransportError, \
-        ErrorFolderNotFound, ErrorToFolderNotFound
+        ErrorFolderNotFound, ErrorToFolderNotFound, ErrorInvalidPropertyRequest
     from exchangelib.items import Item, Message
     from exchangelib.services import EWSService, EWSAccountService
     from exchangelib.util import create_element, add_xml_child
@@ -1134,6 +1134,18 @@ script:
         }
 
 
+    def fix_unread_count():
+        try:
+            account = get_account(ACCOUNT_EMAIL)
+            get_folder_by_path(account, FOLDER_NAME)
+        except ErrorInvalidPropertyRequest as e:
+            if 'FieldURI="folder:UnreadCount"' in e.message:
+                Folder.FIELDS.pop(7)  # Crude yet effecrtive
+        except:
+            pass  # Let the other error hadling logic deal with it
+
+
+
     def test_module():
         try:
             global IS_TEST_MODULE
@@ -1159,6 +1171,7 @@ script:
     try:
         config = prepare()
         args = prepare_args(demisto.args())
+        fix_unread_count()
 
         if demisto.command() == 'test-module':
             test_module()
@@ -1766,4 +1779,4 @@ script:
     description: Move an item from one mailbox to another.
   dockerimage: demisto/py-ews:2.0
   isfetch: true
-releaseNotes: "Fixed issue when searching all mailboxes - skipped mailboxes without mailboxId."
+releaseNotes: "Fixed rare 2010 configuration issue: Folder has no UnreadCount property."
