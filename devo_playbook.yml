@@ -1,0 +1,63 @@
+id: 96b18b5a-beed-4cd0-81dd-221ac8ee210b
+version: 1
+name: devo_playbook
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: 1bf81b31-c2b1-47cb-849c-48bbe3a41470
+    type: start
+    task:
+      id: 1bf81b31-c2b1-47cb-849c-48bbe3a41470
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "1"
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+    note: false
+    timertriggers: []
+  "1":
+    id: "1"
+    taskid: 6dd7693e-d9b3-4aaf-8cc8-65498a3d6b31
+    type: regular
+    task:
+      id: 6dd7693e-d9b3-4aaf-8cc8-65498a3d6b31
+      version: -1
+      name: Untitled Task
+      type: regular
+      iscommand: false
+      brand: ""
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 430,
+          "y": 260
+        }
+      }
+    note: false
+    timertriggers: []
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 305,
+        "width": 400,
+        "x": 430,
+        "y": 50
+      }
+    }
+  }
+inputs: []
+outputs: []

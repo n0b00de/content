@@ -1,0 +1,11 @@
+commonfields:
+  id: 8f92b76c-867e-47d6-8399-d76deb4238a4
+  version: 2
+name: auot_dev
+script: ""
+type: python
+tags: []
+enabled: true
+scripttarget: 0
+runonce: false
+runas: DBotWeakRole
