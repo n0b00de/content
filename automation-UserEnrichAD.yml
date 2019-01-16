@@ -1,0 +1,24 @@
+commonfields:
+  id: UserEnrichAD
+  version: -1
+name: UserEnrichAD
+script: demisto.results( demisto.executeCommand("ADGetUser", demisto.args()))
+type: python
+tags:
+- enhancement
+- active directory
+- user
+comment: Enhancement automation for user type indicator, to enrich the user name from
+  Active Directory data
+enabled: true
+system: true
+args:
+- name: name
+  required: true
+  default: true
+  description: Name of user
+scripttarget: 0
+dependson:
+  must:
+  - ad-search
+runonce: false

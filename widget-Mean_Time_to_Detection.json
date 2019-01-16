@@ -1,0 +1,41 @@
+{
+	"id": "mean-time-to-detection",
+	"version": -1,
+	"modified": "2019-01-16T19:06:24.202482574Z",
+	"commitMessage": "Demisto content update",
+	"shouldPublish": true,
+	"shouldCommit": false,
+	"shouldPush": false,
+	"versionedDiff": {
+		"action": "",
+		"addedLines": 0,
+		"deletedLines": 0
+	},
+	"name": "Mean Time to Detection",
+	"prevName": "Mean Time to Detection",
+	"dataType": "incidents",
+	"widgetType": "duration",
+	"query": "-category:job and detectionsla.runStatus:ended",
+	"sort": null,
+	"isPredefined": true,
+	"description": "The mean time (average time) to detection across all incidents that their severity was determined. The widget takes into account incidents from the last 30 days by default.",
+	"dateRange": {
+		"fromDate": "0001-01-01T00:00:00Z",
+		"toDate": "0001-01-01T00:00:00Z",
+		"period": {
+			"byTo": "",
+			"byFrom": "days",
+			"toValue": null,
+			"fromValue": 30,
+			"field": ""
+		},
+		"fromDateLicense": "0001-01-01T00:00:00Z"
+	},
+	"params": {
+		"keys": [
+			"avg|detectionsla.totalDuration"
+		]
+	},
+	"size": 0,
+	"category": ""
+}
