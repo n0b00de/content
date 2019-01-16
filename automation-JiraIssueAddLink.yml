@@ -1,0 +1,46 @@
+commonfields:
+  id: JiraIssueAddLink
+  version: -1
+name: JiraIssueAddLink
+script: |2
+
+  resp = demisto.executeCommand("jira-issue-add-link", demisto.args())
+
+  if isError(resp[0]):
+      demisto.results(resp)
+  else:
+      data = demisto.get(resp[0], "Contents")
+      if data:
+          data = data if isinstance(data, list) else [data]
+          data = [{k: formatCell(row[k]) for k in row} for row in data]
+          demisto.results({"ContentsFormat": formats["table"], "Type": entryTypes["note"], "Contents": data} )
+      else:
+          demisto.results("No results.")
+type: python
+tags:
+- jira
+comment: Creates (or updates) issue link
+system: true
+args:
+- name: globalId
+  description: If a globalId is provided and a remote issue link exists with that
+    globalId, the remote issue link is updated
+- name: relationship
+  description: object relationship to issue , like - causes
+- name: url
+  required: true
+  description: link url
+- name: title
+  required: true
+  description: link title
+- name: summary
+  description: link summary
+- name: issueId
+  required: true
+  description: Issue Id
+scripttarget: 0
+dependson:
+  must:
+  - jira-issue-add-link
+runonce: false
+deprecated: true

@@ -1,0 +1,35 @@
+{
+	"id": "hashRepSHA1",
+	"version": -1,
+	"modified": "2019-01-16T19:06:23.970624637Z",
+	"commitMessage": "Demisto content update",
+	"shouldPublish": true,
+	"shouldCommit": false,
+	"shouldPush": false,
+	"versionedDiff": {
+		"action": "",
+		"addedLines": 0,
+		"deletedLines": 0
+	},
+	"regex": "\\b[a-fA-F\\d]{40}\\b",
+	"details": "File SHA1",
+	"prevDetails": "File SHA1",
+	"reputationScriptName": "",
+	"reputationCommand": "file",
+	"enhancementScriptNames": [
+		"FileReputation",
+		"SplunkSearch",
+		"WildfireReport",
+		"SplunkPySearch"
+	],
+	"system": true,
+	"locked": false,
+	"disabled": false,
+	"file": false,
+	"updateAfter": 0,
+	"mergeContext": false,
+	"formatScript": "",
+	"contextPath": "",
+	"contextValue": "",
+	"excludedBrands": null
+}

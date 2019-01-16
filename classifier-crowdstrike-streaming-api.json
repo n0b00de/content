@@ -1,0 +1,71 @@
+{
+	"id": "crowdstrike-streaming-api",
+	"version": -1,
+	"modified": "2019-01-16T19:06:24.379845558Z",
+	"commitMessage": "Demisto content update",
+	"shouldPublish": true,
+	"shouldCommit": false,
+	"shouldPush": false,
+	"versionedDiff": {
+		"action": "",
+		"addedLines": 0,
+		"deletedLines": 0
+	},
+	"defaultIncidentType": "",
+	"instanceId": "",
+	"mapping": {
+		"Malware": {
+			"internalMapping": {
+				"Dest": {
+					"simple": "event.ComputerName",
+					"complex": null
+				},
+				"Dest NT Domain": {
+					"simple": "event.MachineDomain",
+					"complex": null
+				},
+				"File Hash": {
+					"simple": "event.MD5String",
+					"complex": null
+				},
+				"File Name": {
+					"simple": "event.FileName",
+					"complex": null
+				},
+				"File Path": {
+					"simple": "event.FilePath",
+					"complex": null
+				},
+				"User": {
+					"simple": "event.UserName",
+					"complex": null
+				},
+				"Vendor Product": {
+					"simple": "\"CrowdStrike\"",
+					"complex": null
+				},
+				"details": {
+					"simple": "event.DetectDescription",
+					"complex": null
+				},
+				"name": {
+					"simple": "event.DetectName",
+					"complex": null
+				}
+			},
+			"dontMapEventToLabels": true
+		}
+	},
+	"unclassifiedCases": {},
+	"incidentSamples": null,
+	"custom": false,
+	"transformer": {
+		"simple": "metadata.eventType",
+		"complex": null
+	},
+	"keyTypeMap": {
+		"DetectionSummaryEvent": "Malware"
+	},
+	"brandName": "crowdstrike-streaming-api",
+	"instanceName": ""
+}

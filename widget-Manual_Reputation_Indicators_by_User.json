@@ -1,0 +1,40 @@
+{
+	"id": "indicators-manual-user",
+	"version": -1,
+	"modified": "2019-01-16T19:06:24.199247769Z",
+	"commitMessage": "Demisto content update",
+	"shouldPublish": true,
+	"shouldCommit": false,
+	"shouldPush": false,
+	"versionedDiff": {
+		"action": "",
+		"addedLines": 0,
+		"deletedLines": 0
+	},
+	"name": "Manual Reputation Indicators by User",
+	"prevName": "Manual Reputation Indicators by User",
+	"dataType": "indicators",
+	"widgetType": "bar",
+	"query": "manualScore:T",
+	"sort": null,
+	"isPredefined": true,
+	"dateRange": {
+		"fromDate": "0001-01-01T00:00:00Z",
+		"toDate": "0001-01-01T00:00:00Z",
+		"period": {
+			"byTo": "",
+			"byFrom": "days",
+			"toValue": null,
+			"fromValue": 7,
+			"field": ""
+		},
+		"fromDateLicense": "0001-01-01T00:00:00Z"
+	},
+	"params": {
+		"groupBy": [
+			"setBy"
+		]
+	},
+	"size": 10,
+	"category": ""
+}
