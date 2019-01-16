@@ -1,0 +1,61 @@
+id: 9e61302f-42cd-488a-8d63-5ed36b02f6ed
+version: 1
+name: Dev_Playbook
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: bcdd5fc7-0995-49d3-874f-3f072b15c24c
+    type: start
+    task:
+      id: bcdd5fc7-0995-49d3-874f-3f072b15c24c
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "1"
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+    note: false
+  "1":
+    id: "1"
+    taskid: 5b7fd12a-bb2b-45b2-85de-34f40686ba1d
+    type: regular
+    task:
+      id: 5b7fd12a-bb2b-45b2-85de-34f40686ba1d
+      version: -1
+      name: Untitled Task
+      type: regular
+      iscommand: false
+      brand: ""
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 460,
+          "y": 240
+        }
+      }
+    note: false
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 285,
+        "width": 390,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
+inputs: []
+outputs: []
