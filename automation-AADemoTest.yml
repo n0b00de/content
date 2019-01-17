@@ -1,0 +1,11 @@
+commonfields:
+  id: 676f7840-7226-46e0-8725-3e27245da8be
+  version: 3
+name: AADemoTest
+script: Hello world
+type: python
+tags: []
+enabled: true
+scripttarget: 0
+runonce: false
+runas: DBotWeakRole
