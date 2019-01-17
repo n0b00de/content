@@ -1,8 +1,8 @@
 commonfields:
   id: 676f7840-7226-46e0-8725-3e27245da8be
-  version: 3
+  version: 4
 name: AADemoTest
-script: Hello world
+script: Hello world New
 type: python
 tags: []
 enabled: true
