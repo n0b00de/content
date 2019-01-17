@@ -1,0 +1,39 @@
+id: dafc6d2c-b289-436c-8619-eb28ecf4fdfe
+version: 1
+name: PushEx
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: f8bd3601-e32c-469a-8b1d-232b1a10d25d
+    type: start
+    task:
+      id: f8bd3601-e32c-469a-8b1d-232b1a10d25d
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+    note: false
+    timertriggers: []
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 65,
+        "width": 380,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
+inputs: []
+outputs: []
