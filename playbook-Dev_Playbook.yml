@@ -1,0 +1,84 @@
+id: 9e61302f-42cd-488a-8d63-5ed36b02f6ed
+version: 3
+name: Dev_Playbook
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: bcdd5fc7-0995-49d3-874f-3f072b15c24c
+    type: start
+    task:
+      id: bcdd5fc7-0995-49d3-874f-3f072b15c24c
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "1"
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 50
+        }
+      }
+    note: false
+  "1":
+    id: "1"
+    taskid: d749c22f-0caf-4fbf-8ea8-af56d0f2db45
+    type: regular
+    task:
+      id: d749c22f-0caf-4fbf-8ea8-af56d0f2db45
+      version: -1
+      name: Do this
+      type: regular
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "2"
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 250
+        }
+      }
+    note: false
+  "2":
+    id: "2"
+    taskid: 91c9b016-dd81-4782-844e-2e329f40b455
+    type: regular
+    task:
+      id: 91c9b016-dd81-4782-844e-2e329f40b455
+      version: -1
+      name: Then do this
+      type: regular
+      iscommand: false
+      brand: ""
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 450,
+          "y": 460
+        }
+      }
+    note: false
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 505,
+        "width": 380,
+        "x": 450,
+        "y": 50
+      }
+    }
+  }
+inputs: []
+outputs: []
