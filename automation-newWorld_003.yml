@@ -1,0 +1,11 @@
+commonfields:
+  id: e812bc78-3add-4beb-8e2b-213924777909
+  version: 3
+name: newWorld_003
+script: ""
+type: python
+tags: []
+enabled: true
+scripttarget: 0
+runonce: false
+runas: DBotWeakRole
